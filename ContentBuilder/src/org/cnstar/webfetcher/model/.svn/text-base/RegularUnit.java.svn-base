@@ -1,0 +1,46 @@
+package org.cnstar.leademu.model;
+
+public  class RegularUnit
+{
+	int step;
+	String xpath;
+	String inputValue;
+	/**
+	 * @return the step
+	 */
+	public int getStep() {
+	    return step;
+	}
+	/**
+	 * @param step the step to set
+	 */
+	public void setStep(int step) {
+	    this.step = step;
+	}
+	/**
+	 * @return the xpath
+	 */
+	public String getXpath() {
+	    return xpath;
+	}
+	/**
+	 * @param xpath the xpath to set
+	 */
+	public void setXpath(String xpath) {
+	    this.xpath = xpath;
+	}
+	/**
+	 * @return the inputValue
+	 */
+	public String getInputValue() {
+	    return inputValue;
+	}
+	/**
+	 * @param inputValue the inputValue to set
+	 */
+	public void setInputValue(String inputValue) {
+	    this.inputValue = inputValue;
+	}
+	
+}
+

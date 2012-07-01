@@ -1,0 +1,959 @@
+DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:18 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:18 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:18 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.129.227.131 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.129.227.131 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.129.227.131 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:29:23 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:23 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:23 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:23 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 173[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=290[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:29:23 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:23 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:23 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:23 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 173
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=290
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "zlid||4058[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "catid||3[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "fname||Carl[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "lname||Raymond[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "email||Carl_Raymond%40hotmail.com[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "address||712+N+8Th+St[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "state||KS[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "city||Kansas+city[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "zip||66101[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "phone||9134848779[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "sex||M[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "SSN||[\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@210b5b
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:23 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=76.170.137.33 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=76.170.137.33 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=76.170.137.33 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:29:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=289[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:29:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=289
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@1f06dc3
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入页面中....
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=71.94.62.82 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=71.94.62.82 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=71.94.62.82 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:29:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=288[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:29:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=288
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@f8f7db
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=97.94.163.232 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=97.94.163.232 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=97.94.163.232 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:29:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=287[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:29:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:29:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:29:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:29:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=287
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@a084f8
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Connection closed
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to lead.djx1981.com/173.201.189.208:80
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:29:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=66.169.197.251 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=66.169.197.251 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=66.169.197.251 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:01 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:01 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:01 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:01 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 179[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=300[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:01 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:01 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:01 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:01 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 179
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=300
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "zlid||19974[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "catid||3[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "fname||Alan[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "lname||Skinner[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "email||Alan_Skinner%40mail.com[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "address||6366+SHADY+BROOK+LN.+1209[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "state||TX[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "city||Dallas[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "zip||75206[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "phone||2147391267[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "sex||M[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "SSN||[\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@1acd47
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:01 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.239.11 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.239.11 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.239.11 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:08 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:08 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:08 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:08 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=299[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:08 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:08 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:08 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:08 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=299
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@19ce060
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Connection closed
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to lead.djx1981.com/173.201.189.208:80
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:08 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=173.2.40.139 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=173.2.40.139 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=173.2.40.139 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:33 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=300[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:33 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=300
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@56f631
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:33 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.226.96 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.226.96 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.98.226.96 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:38 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 182[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=299[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:38 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 182
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=299
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "zlid||11442[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "catid||3[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "fname||Judy[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "lname||Thurman[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "email||Judy.Thurman%40gmail.com[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "address||3137+Benjamin+E+Mays+Drive[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "state||GA[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "city||Atlanta[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "zip||30311[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "phone||4046912456[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "sex||F[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "SSN||[\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@4f459c
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入页面中....
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:38 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=69.245.32.144 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=69.245.32.144 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=69.245.32.144 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:43 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:43 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:43 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:43 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=298[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:43 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:43 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:43 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:43 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=298
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@1b5998f
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:43 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=67.84.134.22 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=67.84.134.22 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=67.84.134.22 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:45:47 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:47 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:47 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:47 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=297[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:45:47 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:45:47 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:45:47 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:45:47 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=297
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@1e57e8f
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入页面中....
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 超时，等待再次加载
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 重试
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Connection closed
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to lead.djx1981.com/173.201.189.208:80
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:45:47 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=68.106.41.28 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=68.106.41.28 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=68.106.41.28 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:55:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:27 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 172[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=300[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:55:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:27 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 172
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=300
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "zlid||8279[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "catid||3[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "fname||Julian[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "lname||Guevara[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "email||Julian7522%40hotmail.com[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "address||24404+N+72Nd+Ave[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "state||AZ[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "city||Peoria[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "zip||85383[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "phone||6235615040[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "sex||M[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "SSN||[\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@39e5b5
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:27 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.178.5.71 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.178.5.71 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=72.178.5.71 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:55:31 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:31 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:31 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:31 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 180[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=299[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:55:31 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:31 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:31 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:31 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 180
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=299
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "zlid||14238[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "catid||3[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "fname||Marek[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "lname||Kajko[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "email||Marek.Kajko%40gmail.com[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "address||4600+Fairbaks+Dr.+Ap.+1624[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "state||TX[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "city||El+paso[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "zip||79924[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "phone||9157573729[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "sex||M[\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "SSN||[\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@5f6303
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入页面中....
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:31 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.99.189.110 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.wire - >> "GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.99.189.110 HTTP/1.1[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Host: lead.djx1981.com[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "User-Agent: Apache-HttpClient/4.1.1 (java 1.5)[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - >> "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.headers - >> GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=24.99.189.110 HTTP/1.1
+     DEBUG Thread-1 org.apache.http.headers - >> Host: lead.djx1981.com
+     DEBUG Thread-1 org.apache.http.headers - >> Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+     DEBUG Thread-1 org.apache.http.headers - >> Cookie: PHPSESSID=642f5ba63adccbbbfa0417eaaed3c262; affuser=test; goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; savesess=y
+     DEBUG Thread-1 org.apache.http.wire - << "HTTP/1.1 200 OK[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Date: Mon, 11 Jul 2011 02:55:36 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Server: Apache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "X-Powered-By: PHP/5.2.14[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Pragma: no-cache[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:36 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:36 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:36 GMT[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Length: 24[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Keep-Alive: timeout=10, max=298[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Connection: Keep-Alive[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "Content-Type: text/html[\r][\n]"
+     DEBUG Thread-1 org.apache.http.wire - << "[\r][\n]"
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << HTTP/1.1 200 OK
+     DEBUG Thread-1 org.apache.http.headers - << Date: Mon, 11 Jul 2011 02:55:36 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Server: Apache
+     DEBUG Thread-1 org.apache.http.headers - << X-Powered-By: PHP/5.2.14
+     DEBUG Thread-1 org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+     DEBUG Thread-1 org.apache.http.headers - << Pragma: no-cache
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: goldSESSaff=6eff25f9d64b9e20ad3d4da060f485e3; expires=Mon, 18-Jul-2011 02:55:36 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: affuser=test; expires=Mon, 18-Jul-2011 02:55:36 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Set-Cookie: savesess=y; expires=Mon, 18-Jul-2011 02:55:36 GMT
+     DEBUG Thread-1 org.apache.http.headers - << Content-Length: 24
+     DEBUG Thread-1 org.apache.http.headers - << Keep-Alive: timeout=10, max=298
+     DEBUG Thread-1 org.apache.http.headers - << Connection: Keep-Alive
+     DEBUG Thread-1 org.apache.http.headers - << Content-Type: text/html
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.client.protocol.ResponseProcessCookies - Cookie accepted: "[version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011]". 
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 10000 MILLISECONDS
+     DEBUG Thread-1 org.apache.http.wire - << "Not Found Matched Ziliao"
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Releasing connection org.apache.http.impl.conn.SingleClientConnManager$ConnAdapter@766a24
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 about:blank
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 前往 http://www.andesnetwork.com/r.php?cid=9544&sid=51&tid=
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 等待页面载入
+     DEBUG Thread-1 org.cnstar.leademu.LeadEmu - 加载完成
+     DEBUG LEAD_RECORD org.cnstar.leademu.LeadEmu - 载入完成
+     INFO Thread-1 org.cnstar.leademu.LeadEmu - 开始记录广告规则：groupName(Ad_Groups\group_3) id(15) Name(AutoLoanATM.com) Urlhttp://autoloanatm.mediasslserver.com)
+     DEBUG Thread-1 org.apache.http.impl.conn.SingleClientConnManager - Get connection for route HttpRoute[{}->http://lead.djx1981.com]
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: compatibility
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: PHPSESSID][value: 642f5ba63adccbbbfa0417eaaed3c262][domain: lead.djx1981.com][path: /][expiry: null] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: affuser][value: test][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: goldSESSaff][value: 6eff25f9d64b9e20ad3d4da060f485e3][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: savesess][value: y][domain: lead.djx1981.com][path: /][expiry: Mon Jul 18 10:55:36 CST 2011] match [lead.djx1981.com:80/login.php]
+     DEBUG Thread-1 org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+     DEBUG Thread-1 org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+     DEBUG Thread-1 org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /login.php?action=clientad&sub=downziliao&ad_id=15&ip=66.176.174.177 HTTP/1.1
+     

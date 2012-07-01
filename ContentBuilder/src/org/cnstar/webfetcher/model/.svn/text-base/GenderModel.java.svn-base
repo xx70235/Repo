@@ -1,0 +1,21 @@
+package org.cnstar.leademu.model;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.HashMap;
+import java.util.Map;
+
+public class GenderModel {
+    
+    static Map<String, String> genderMap;
+    static {
+	genderMap = new HashMap<String, String>();
+	genderMap.put("f", "female|mr");
+	genderMap.put("m", "male|ms|mrs");
+    }
+    
+    public static String get(String key)
+    {
+	return genderMap.get(key.toLowerCase());
+    }
+
+}

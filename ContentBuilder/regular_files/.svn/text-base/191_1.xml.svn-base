@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://quotesonic.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//span/input[@type='text' and @id='contact-zip_code' and @name='contact-zip_code' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//span/input[@type='button' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+</Regulars>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://reg.winningsurveys.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//</Xpath>
+<InputValue> </InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//td/input[@type='text' and @name='email' ]</Xpath>
+<InputValue>Email</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//td/select[@name='title' ]</Xpath>
+<InputValue>2</InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//td/input[@type='text' and @name='fname' ]</Xpath>
+<InputValue>First Name</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//td/input[@type='text' and @name='lname' ]</Xpath>
+<InputValue>Last Name</InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//td/input[@type='text' and @name='street' ]</Xpath>
+<InputValue>Address</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//td/input[@type='text' and @name='city' ]</Xpath>
+<InputValue>City</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//td/select[@name='state' ]</Xpath>
+<InputValue>State</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//td/input[@type='text' and @name='zip' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//td/input[@type='text' and @name='phone' ]</Xpath>
+<InputValue>Phone</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//td/select[@name='bd_m' ]</Xpath>
+<InputValue>2|3|4|5|6</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//td/select[@name='bd_d' ]</Xpath>
+<InputValue>4|5|6|7|8|9</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//td/select[@name='bd_y' ]</Xpath>
+<InputValue>11|12|13|14|15</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//td/input[@type='image' and @name='imageField' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+<RegularUnit step="15">
+<Xpath>//td/input[@type='checkbox' and @name='f33177' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="16">
+<Xpath>//td/input[@type='checkbox' and @name='f33181' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="17">
+<Xpath>//td/input[@type='checkbox' and @name='f33186' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="18">
+<Xpath>//td/input[@type='checkbox' and @name='f33201' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="19">
+<Xpath>//td/input[@type='checkbox' and @name='f33188' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="20">
+<Xpath>//td/input[@type='checkbox' and @name='f33211' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="21">
+<Xpath>//td/input[@type='checkbox' and @name='f33212' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="22">
+<Xpath>//td/input[@type='checkbox' and @name='f33233' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="23">
+<Xpath>//td/input[@type='checkbox' and @name='f33241' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="24">
+<Xpath>//div[@class='ss_od_no' ]/input[@type='radio' and @name='q6830' and @id='radio_6830_n' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="25">
+<Xpath>//td[@id='cell_77908' ]/input[@type='checkbox' and @name='f33272' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="26">
+<Xpath>//td[@id='cell_77912' ]/input[@type='checkbox' and @name='f33277' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="27">
+<Xpath>//td[@id='cell_77957' ]/input[@type='checkbox' and @name='f33278' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="28">
+<Xpath>//td[@id='cell_77957' ]/input[@type='checkbox' and @name='f33270' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="29">
+<Xpath>//div[@class='ss_od_no' ]/input[@type='radio' and @name='q3004' and @id='radio_3004_n' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="30">
+<Xpath>//td[@id='cell_77908' ]/input[@type='checkbox' and @name='f35338' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="31">
+<Xpath>//td[@id='cell_77958' ]/input[@type='checkbox' and @name='f35341' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="32">
+<Xpath>//td[@id='cell_77957' ]/input[@type='checkbox' and @name='f35336' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="33">
+<Xpath>//td[@id='cell_77908' ]/input[@type='checkbox' and @name='f35342' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="34">
+<Xpath>//td[@id='cell_77958' ]/input[@type='checkbox' and @name='f35345' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="35">
+<Xpath>//td[@id='cell_77908' ]/input[@type='checkbox' and @name='f35346' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="36">
+<Xpath>//td/select[@name='f33139' ]</Xpath>
+<InputValue>2</InputValue>
+</RegularUnit>
+<RegularUnit step="37">
+<Xpath>//td/select[@name='f35374' ]</Xpath>
+<InputValue>3</InputValue>
+</RegularUnit>
+<RegularUnit step="38">
+<Xpath>//td/select[@name='f35375' ]</Xpath>
+<InputValue>4</InputValue>
+</RegularUnit>
+<RegularUnit step="39">
+<Xpath>//td/select[@name='f35376' ]</Xpath>
+<InputValue>5</InputValue>
+</RegularUnit>
+<RegularUnit step="40">
+<Xpath>//td/select[@name='f35377' ]</Xpath>
+<InputValue>3</InputValue>
+</RegularUnit>
+</Regulars>

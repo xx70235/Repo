@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://www.quicklinkautoloan.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[fn]' ]</Xpath>
+<InputValue>First Name</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[em]' ]</Xpath>
+<InputValue>Email</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//div/input[@type='image' and @id='submitBtn' and @name='submitBtn' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_lastname]' ]</Xpath>
+<InputValue>Last Name</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//</Xpath>
+<InputValue> </InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_address]' ]</Xpath>
+<InputValue>Address</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_city]' ]</Xpath>
+<InputValue>City</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/select[@name='appData[l_state]' ]</Xpath>
+<InputValue>State</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_zipcode]' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/select[@name='appData[l_gender]' ]</Xpath>
+<InputValue>Sex</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/select[@name='appData[l_residence]' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/select[@name='appData[l_time]' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/select[@name='appData[l_resMonthlyPmt]' ]</Xpath>
+<InputValue>3|4</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_homephonearea]' ]</Xpath>
+<InputValue>phone_areaNum</InputValue>
+</RegularUnit>
+<RegularUnit step="15">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_homephoneexchange]' ]</Xpath>
+<InputValue>phone_exchangeNum</InputValue>
+</RegularUnit>
+<RegularUnit step="16">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_homephonenumber]' ]</Xpath>
+<InputValue>phone_lastNum</InputValue>
+</RegularUnit>
+<RegularUnit step="17">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_socialsecurity]' ]</Xpath>
+<InputValue>SSN</InputValue>
+</RegularUnit>
+<RegularUnit step="18">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//td/input[@type='text' and @name='appData[l_bdate]' ]</Xpath>
+<InputValue>12/17/1976|12/15/1972</InputValue>
+</RegularUnit>
+<RegularUnit step="19">
+<Xpath>//body/iframe[@name='iframe' and @id='iframe' ]##//body/iframe[@name='iframe' and @id='iframe' ]##//div/input[@type='image' and @id='submitBtn' and @name='submitBtn' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+</Regulars>

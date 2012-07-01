@@ -1,0 +1,2 @@
+https://www.cia.gov/library/publications/the-world-factbook/geos/[file_reg].html
+https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_[file_reg].html

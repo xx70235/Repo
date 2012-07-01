@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://reg.winningsurveys.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//div/input[@type='text' and @name='email' ]</Xpath>
+<InputValue>Email</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//div/select[@name='state' ]</Xpath>
+<InputValue>State</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//</Xpath>
+<InputValue> </InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//div/select[@name='title' ]</Xpath>
+<InputValue>2</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//div/input[@type='text' and @name='fname' ]</Xpath>
+<InputValue>First Name</InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//div/input[@type='text' and @name='lname' ]</Xpath>
+<InputValue>Last Name</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//div/input[@type='text' and @name='street' ]</Xpath>
+<InputValue>Address</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//div/input[@type='text' and @name='city' ]</Xpath>
+<InputValue>City</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//div/input[@type='text' and @name='zip' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//div/input[@type='text' and @name='phone' ]</Xpath>
+<InputValue>Phone</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//div/select[@name='bd_m' ]</Xpath>
+<InputValue>3|4</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//div/select[@name='bd_d' ]</Xpath>
+<InputValue>2|5</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//div/select[@name='bd_y' ]</Xpath>
+<InputValue>11|12</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//td/input[@type='image' and @name='imageField' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+</Regulars>

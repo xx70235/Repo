@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars Project_Name = "falgs4">
+<WrapUrls>
+<url>https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_af.html</url>
+<url>https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_ax.html</url>
+<url>https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_al.html</url>
+<url>https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_ag.html</url>
+<url>https://www.cia.gov/library/publications/the-world-factbook/flags/flagtemplate_aq.html</url>
+</WrapUrls>
+<RegularUnit step="1">
+<Xpath>//body/table/tbody/tr/td/div/span</Xpath>
+<InputValue>Title</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//body/table/tbody/tr/td/table/tbody/tr/td/img[@id='flagborder' and @name='flagborder' ]</Xpath>
+<InputValue>Image</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//body/table/tbody/tr/td/table/tbody/tr/td[@id='flag_caption' ]/table/tbody/tr/td/div/span</Xpath>
+<InputValue>Description</InputValue>
+</RegularUnit>
+</Regulars>

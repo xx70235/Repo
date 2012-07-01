@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://www.choiceautoinsurance.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//</Xpath>
+<InputValue> </InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//div[@class='input' ]/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_bodyRight_ctl00_txtZip' and @name='ctl00$ctl00$BaseContentPlaceHolder$bodyRight$ctl00$txtZip' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//div[@class='enterZipButtonContent' ]/input[@type='image' and @id='ctl00_ctl00_BaseContentPlaceHolder_bodyRight_ctl00_btnQuote' and @name='ctl00$ctl00$BaseContentPlaceHolder$bodyRight$ctl00$btnQuote' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//td[@class='label' ]/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtFirstName' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtFirstName' ]</Xpath>
+<InputValue>First Name</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//td[@class='label' ]/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtLastName' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtLastName' ]</Xpath>
+<InputValue>Last Name</InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//td[@class='label' ]/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtAddress' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtAddress' ]</Xpath>
+<InputValue>Address</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//td[@class='label' ]/select[@id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_lstTimeAtCurrentAddress' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$lstTimeAtCurrentAddress' ]</Xpath>
+<InputValue>3|4|5|6</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//td[@class='label' ]/select[@id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_lstOwnResidence' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$lstOwnResidence' ]</Xpath>
+<InputValue>1</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//td[@class='label' ]/select[@id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_lstCreditProfile' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$lstCreditProfile' ]</Xpath>
+<InputValue>1|2</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//li/input[@type='radio' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$lstBankruptcy' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_lstBankruptcy_0' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//td[@class='label' ]/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtEmail' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtEmail' ]</Xpath>
+<InputValue>Email</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//strong/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtPhoneNumber1' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtPhoneNumber1' ]</Xpath>
+<InputValue>phone_areaNum</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//strong/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtPhoneNumber2' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtPhoneNumber2' ]</Xpath>
+<InputValue>phone_exchangeNum</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//strong/input[@type='text' and @id='ctl00_ctl00_BaseContentPlaceHolder_body_ctl00_txtPhoneNumber3' and @name='ctl00$ctl00$BaseContentPlaceHolder$body$ctl00$txtPhoneNumber3' ]</Xpath>
+<InputValue>phone_lastNum</InputValue>
+</RegularUnit>
+</Regulars>

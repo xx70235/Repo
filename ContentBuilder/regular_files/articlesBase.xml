@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars Project_Name="articlesBase">
+<WrapUrls>
+<url>http://www.articlesbase.com/</url>
+</WrapUrls>
+<RegularUnit step="1">
+<TargetMark>//body/div[@id='wrapper' ]/div[@id='header' ]/div/form/input[@type='text' and @name='q' ]%%0</TargetMark>
+<Option>Input:keyword</Option>
+<Mapping>Option</Mapping>
+<Repeat>false</Repeat>
+</RegularUnit>
+<RegularUnit step="2">
+<TargetMark>//body/div[@id='wrapper' ]/div[@id='header' ]/div/form/input[@type='submit' ]%%0</TargetMark>
+<Option>ClickButton</Option>
+<Mapping>Option</Mapping>
+<Repeat>false</Repeat>
+</RegularUnit>
+<RegularUnit step="3">
+<TargetMark>//body/div[@id='content' ]/div[@id='content_right' ]/div/div/p%%-1</TargetMark>
+<Option>GetValue</Option>
+<Mapping>Description</Mapping>
+<Repeat>true</Repeat>
+</RegularUnit>
+<RegularUnit step="4">
+<TargetMark>//body/div[@id='content' ]/div[@id='content_right' ]/div/div/div/h3/a%%-1</TargetMark>
+<Option>GetValue</Option>
+<Mapping>Title</Mapping>
+<Repeat>true</Repeat>
+</RegularUnit>
+<RegularUnit step="5">
+<TargetMark>//body/div[@id='content' ]/div[@id='content_right' ]/div/div/div/a[@name='paging_link' ]%%9</TargetMark>
+<Option>ClickButton</Option>
+<Mapping>next</Mapping>
+<Repeat>true</Repeat>
+</RegularUnit>
+</Regulars>

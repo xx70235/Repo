@@ -1,0 +1,62 @@
+package org.mozilla.dom;
+
+import org.mozilla.interfaces.*;
+import org.w3c.dom.Node;
+
+import es.ladyr.ladyrbrowser.impl.HTMLElementFactory;
+
+public class NodeFactory
+{
+    private NodeFactory()
+    {}
+    
+    public static Node getNodeInstance( nsIDOMEventTarget eventTarget )
+    {
+    	if (eventTarget == null ) {
+			return null;
+		}
+    	nsIDOMNode node = (nsIDOMNode) eventTarget.queryInterface(nsIDOMNode.NS_IDOMNODE_IID);
+    	return getNodeInstance(node);
+    }
+   
+    public static Node getNodeInstance( nsIDOMNode node )
+    {
+    	if (node == null) {
+			return null;
+		}
+    	
+        switch ( node.getNodeType() )
+        {
+            case nsIDOMNode.ELEMENT_NODE: 
+            	Node htmlElement = HTMLElementFactory.getHTMLElement(node);
+            	if(htmlElement != null){
+            		return htmlElement;
+            	} else {
+            		return ElementImpl.getDOMInstance((nsIDOMElement) node.queryInterface(nsIDOMElement.NS_IDOMELEMENT_IID));
+            	}
+            case nsIDOMNode.ATTRIBUTE_NODE: return AttrImpl.getDOMInstance((nsIDOMAttr) node.queryInterface(nsIDOMAttr.NS_IDOMATTR_IID));
+            case nsIDOMNode.TEXT_NODE: return TextImpl.getDOMInstance((nsIDOMText) node.queryInterface(nsIDOMText.NS_IDOMTEXT_IID));
+            case nsIDOMNode.CDATA_SECTION_NODE: return CDATASectionImpl.getDOMInstance((nsIDOMCDATASection) node.queryInterface(nsIDOMCDATASection.NS_IDOMCDATASECTION_IID));
+            case nsIDOMNode.ENTITY_REFERENCE_NODE: return EntityReferenceImpl.getDOMInstance((nsIDOMEntityReference) node.queryInterface(nsIDOMEntityReference.NS_IDOMENTITYREFERENCE_IID));   
+            case nsIDOMNode.ENTITY_NODE: return EntityImpl.getDOMInstance((nsIDOMEntity) node.queryInterface(nsIDOMEntity.NS_IDOMENTITY_IID));
+            case nsIDOMNode.PROCESSING_INSTRUCTION_NODE: return ProcessingInstructionImpl.getDOMInstance((nsIDOMProcessingInstruction) node.queryInterface(nsIDOMProcessingInstruction.NS_IDOMPROCESSINGINSTRUCTION_IID));
+            case nsIDOMNode.COMMENT_NODE: return CommentImpl.getDOMInstance((nsIDOMComment) node.queryInterface(nsIDOMComment.NS_IDOMCOMMENT_IID));
+            case nsIDOMNode.DOCUMENT_NODE: return DocumentImpl.getDOMInstance((nsIDOMDocument) node.queryInterface(nsIDOMDocument.NS_IDOMDOCUMENT_IID));
+            case nsIDOMNode.DOCUMENT_TYPE_NODE: return DocumentTypeImpl.getDOMInstance((nsIDOMDocumentType) node.queryInterface(nsIDOMDocumentType.NS_IDOMDOCUMENTTYPE_IID));
+            case nsIDOMNode.DOCUMENT_FRAGMENT_NODE: return DocumentFragmentImpl.getDOMInstance((nsIDOMDocumentFragment) node.queryInterface(nsIDOMDocumentFragment.NS_IDOMDOCUMENTFRAGMENT_IID));
+            case nsIDOMNode.NOTATION_NODE: return NotationImpl.getDOMInstance((nsIDOMNotation) node.queryInterface(nsIDOMNotation.NS_IDOMNOTATION_IID));
+            default: return NodeImpl.getDOMInstance(node);
+        }
+    }
+    
+    public static nsIDOMNode getnsIDOMNode( Node node )
+    {
+    	if (node instanceof NodeImpl) {
+            NodeImpl ni = (NodeImpl) node;
+            return ni.getInstance();
+        }
+	else {	    
+            return null;
+        }
+    }
+}

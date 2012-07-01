@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://www.my-car-value.net/dis=.*?</AdUrl>
+<RegularUnit step="1">
+<Xpath>//td/select[@id='ddlTIVYear' and @name='ddlTIVYear' ]</Xpath>
+<InputValue>2|3|4|5</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//td/select[@id='ddlTIVMake' and @name='ddlTIVMake' ]</Xpath>
+<InputValue>1|2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//td/select[@id='ddlTIVModel' and @name='ddlTIVModel' ]</Xpath>
+<InputValue>2|3|4</InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//td/input[@type='text' and @value='Zip Code' and @id='customer_address_zip_input' and @name='customer_address_zip' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//td/select[@id='ddlMake' and @name='ddlMake' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//td/select[@id='ddlModel' and @name='ddlModel' ]</Xpath>
+<InputValue>3|4</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//td/input[@type='image' and @id='submitTIVStart' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//td/select[@id='ddlColorExterior' and @name='ddlColorExterior' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//td/select[@id='ddlColorInterior' and @name='ddlColorInterior' ]</Xpath>
+<InputValue>1|2</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//td/select[@name='customer_timeframe' and @id='customer_timeframe_input' ]</Xpath>
+<InputValue>1|2</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//td/select[@name='vehicle_financeMethod' and @id='vehicle_financeMethod_input' ]</Xpath>
+<InputValue>1|2</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_name_first' and @id='customer_name_first_input' ]</Xpath>
+<InputValue>First Name</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_name_last' and @id='customer_name_last_input' ]</Xpath>
+<InputValue>Last Name</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_address_street' and @id='customer_address_street_input' ]</Xpath>
+<InputValue>Address</InputValue>
+</RegularUnit>
+<RegularUnit step="15">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_phone1' and @id='customer_phone_input1' ]</Xpath>
+<InputValue>phone_areaNum</InputValue>
+</RegularUnit>
+<RegularUnit step="16">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_phone2' and @id='customer_phone_input2' ]</Xpath>
+<InputValue>phone_exchangeNum</InputValue>
+</RegularUnit>
+<RegularUnit step="17">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_phone3' and @id='customer_phone_input3' ]</Xpath>
+<InputValue>phone_lastNum</InputValue>
+</RegularUnit>
+<RegularUnit step="18">
+<Xpath>//td/input[@type='text' and @value='' and @name='customer_email' and @id='customer_email_input' ]</Xpath>
+<InputValue>Email</InputValue>
+</RegularUnit>
+</Regulars>

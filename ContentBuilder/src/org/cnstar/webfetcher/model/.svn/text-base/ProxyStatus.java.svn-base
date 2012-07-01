@@ -1,0 +1,5 @@
+package org.cnstar.leademu.model;
+
+public enum ProxyStatus {
+OK, Died,Unknown,isUsing
+}

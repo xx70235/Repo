@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Regulars>
+<AdUrl>http://quotesonic.com</AdUrl>
+<RegularUnit step="1">
+<Xpath>//span[@class='input_holder' ]/input[@type='text' and @id='contact-zip_code' and @name='contact-zip_code' ]</Xpath>
+<InputValue>Zip Code</InputValue>
+</RegularUnit>
+<RegularUnit step="2">
+<Xpath>//span[@class='input_holder' ]/input[@type='button' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+<RegularUnit step="3">
+<Xpath>//span[@class='input_holder' ]/select[@class='field' and @name='vehicle-year' and @id='auto-quote__0__auto-vehicle__0__vehicle-year' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="4">
+<Xpath>//span[@class='input_holder' ]/select[@class='field' and @name='vehicle-make' and @id='auto-quote__0__auto-vehicle__0__vehicle-make' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="5">
+<Xpath>//span[@class='input_holder' ]/select[@class='field' and @name='vehicle-model' and @id='auto-quote__0__auto-vehicle__0__vehicle-model' ]</Xpath>
+<InputValue>2|3</InputValue>
+</RegularUnit>
+<RegularUnit step="6">
+<Xpath>//span[@class='input_holder' ]/select[@class='field' and @name='vehicle-submodel' and @id='auto-quote__0__auto-vehicle__0__vehicle-submodel' ]</Xpath>
+<InputValue>0</InputValue>
+</RegularUnit>
+<RegularUnit step="7">
+<Xpath>//span/input[@type='radio' and @name='auto-quote__0__auto-vehicle__0__vehicle-owned_or_leased2' and @id='auto-quote__0__auto-vehicle__0__vehicle-owned_or_leased2__OWNED' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="8">
+<Xpath>//span/input[@type='radio' and @name='auto-quote__0__auto-driver__0__coverage-has_coverage2' and @id='auto-quote__0__auto-driver__0__coverage-has_coverage2__YES' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="9">
+<Xpath>//span[@class='input_holder' ]/select[@class='field dropdown' and @name='driver-license_status' and @id='auto-quote__0__auto-driver__0__driver-license_status' ]</Xpath>
+<InputValue>0|1</InputValue>
+</RegularUnit>
+<RegularUnit step="10">
+<Xpath>//span[@class='input_holder' ]/select[@class='field dropdown' and @name='driver-driver_state' and @id='auto-quote__0__auto-driver__0__driver-driver_state' ]</Xpath>
+<InputValue>State</InputValue>
+</RegularUnit>
+<RegularUnit step="11">
+<Xpath>//span[@class='field date' and @name='contact-birthdate' and @id='auto-quote__0__auto-driver__0__contact-birthdate' ]/input[@type='text' and @name='mm' and @id='auto-quote__0__auto-driver__0__contact-birthdate__mm' ]</Xpath>
+<InputValue>11|12</InputValue>
+</RegularUnit>
+<RegularUnit step="12">
+<Xpath>//span[@class='field date' and @name='contact-birthdate' and @id='auto-quote__0__auto-driver__0__contact-birthdate' ]/input[@type='text' and @name='dd' and @id='auto-quote__0__auto-driver__0__contact-birthdate__dd' ]</Xpath>
+<InputValue>3|4|5</InputValue>
+</RegularUnit>
+<RegularUnit step="13">
+<Xpath>//span[@class='field date' and @name='contact-birthdate' and @id='auto-quote__0__auto-driver__0__contact-birthdate' ]/input[@type='text' and @name='yyyy' and @id='auto-quote__0__auto-driver__0__contact-birthdate__yyyy' ]</Xpath>
+<InputValue>1984|1985|1986</InputValue>
+</RegularUnit>
+<RegularUnit step="14">
+<Xpath>//span/input[@type='radio' and @name='auto-quote__0__auto-driver__0__contact-gender' and @id='auto-quote__0__auto-driver__0__contact-gender__MALE' ]</Xpath>
+<InputValue>点击</InputValue>
+</RegularUnit>
+<RegularUnit step="15">
+<Xpath>//div[@class='input_holder' ]/span[@class='submit-button' ]</Xpath>
+<InputValue>提交</InputValue>
+</RegularUnit>
+</Regulars>

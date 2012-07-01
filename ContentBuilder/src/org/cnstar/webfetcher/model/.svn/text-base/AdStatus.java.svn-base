@@ -1,0 +1,5 @@
+package org.cnstar.leademu.model;
+
+public enum AdStatus {
+Success, Fail, Expire,NeedRedo,Waiting,InOperate,NoRegularFile
+}

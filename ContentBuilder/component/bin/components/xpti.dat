@@ -2,10 +2,10 @@
 
 [Header,2]
 0,Version,2,0
-1,AppDir,D:\Java\ContentBuilder\component\bin
+1,AppDir,D:\REPO\repo\ContentBuilder\component\bin
 
 [Directories,1]
-0,D:\Java\ContentBuilder\component\bin\components
+0,D:\REPO\repo\ContentBuilder\component\bin\components
 
 [Files,1]
 0,XULRunner.xpt,0,362449,1310453836000

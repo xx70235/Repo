@@ -157,7 +157,7 @@ public class BrowserImpl implements LadyrBrowser {
 			public void completed(ProgressEvent event) {
 				loading = false;
 				System.out.println("Document Loaded");
-				setStatus(2, "加载完成");
+//				setStatus(2, "加载完成");
 				finishLoading();
 			}
 		});

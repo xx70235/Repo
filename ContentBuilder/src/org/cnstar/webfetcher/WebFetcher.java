@@ -174,6 +174,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.ProcessingInstruction;
+import org.w3c.dom.html2.HTMLIFrameElement;
 import org.w3c.dom.html2.HTMLSelectElement;
 import org.w3c.dom.html2.HTMLAnchorElement;
 import org.w3c.dom.html2.HTMLBRElement;
@@ -218,9 +219,9 @@ public class WebFetcher implements LadyrBrowser {
 	private LadyrXPathEvaluator xpathEval;
 	private Configuration configuration;
 	private static Iterator<String> currProxyIter;
-	private Map<String, String> nodeVauleMap;//存放元素的映射
-	private Map<String, String> operateMap;//存放元素的操作
-	private Map<String, Boolean> repeatMap;//存放标记的重复状态（是否重复）
+	private Map<String, String> nodeVauleMap;// 存放元素的映射
+	private Map<String, String> operateMap;// 存放元素的操作
+	private Map<String, Boolean> repeatMap;// 存放标记的重复状态（是否重复）
 	private Table tbRegular;
 	private TableEditor tableEditor;
 	private Label lbBrowserStatus;
@@ -283,10 +284,10 @@ public class WebFetcher implements LadyrBrowser {
 					tabItem[i] = new TabItem(browserTabFolder, SWT.NONE);
 					tabItem[i].setText("内容获取窗口" + (i + 1));
 					statusItem[i] = new TableItem(tbStatus, SWT.NONE);
-					statusItem[i].setText(0,String.valueOf(i+1));
+					statusItem[i].setText(0, String.valueOf(i + 1));
 					nativeBrowser[i] = new Browser(browserTabFolder, SWT.MOZILLA);
 					tabItem[i].setControl(nativeBrowser[i]);
-					virtualBrowsers[i] = new BrowserImpl(display, nativeBrowser[i],statusItem[i]);
+					virtualBrowsers[i] = new BrowserImpl(display, nativeBrowser[i], statusItem[i]);
 				}
 			}
 		});
@@ -301,15 +302,15 @@ public class WebFetcher implements LadyrBrowser {
 				try {
 
 					/*
-					 * 将关键字列表分成浏览器的个数个 
+					 * 将关键字列表分成浏览器的个数个
 					 */
 					ArrayList<ArrayList<String>> dividedList = divideKeywordList();
 					int i = 0;
 					checkLatch = new CountDownLatch(browserCount);
 					BlockingQueue<Element> queue = new LinkedBlockingDeque<Element>();
 					for (ArrayList<String> keywordList : dividedList) {
-						//通过浏览器开始抓取
-						virtualBrowsers[i].wrap(queue, projectName,waitPageList.get(0), currRegularModel.getRegularUnitList(), keywordList, checkLatch);
+						// 通过浏览器开始抓取
+						virtualBrowsers[i].wrap(queue, projectName, waitPageList.get(0), currRegularModel.getRegularUnitList(), keywordList, checkLatch);
 						++i;
 					}
 					checkLatch.await();
@@ -317,15 +318,16 @@ public class WebFetcher implements LadyrBrowser {
 					 * 
 					 * 
 					 */
-//					ConnectmySQL connSql = new ConnectmySQL();
-//					String sql = "create table " + projectName + "( ";
-//					for (RegularUnit ruRegularUnit : currRegularModel.getRegularUnitList()) {
-//						if (ruRegularUnit.getMapping().trim().length() != 0)
-//							sql += ruRegularUnit.getMapping() + " TEXT , ";
-//					}
-//					sql = sql.subSequence(0, sql.length() - 2) + ")";
-//					Connection conn = connSql.getConn();
-//					connSql.excuteUpdate(conn, sql);
+					// ConnectmySQL connSql = new ConnectmySQL();
+					// String sql = "create table " + projectName + "( ";
+					// for (RegularUnit ruRegularUnit :
+					// currRegularModel.getRegularUnitList()) {
+					// if (ruRegularUnit.getMapping().trim().length() != 0)
+					// sql += ruRegularUnit.getMapping() + " TEXT , ";
+					// }
+					// sql = sql.subSequence(0, sql.length() - 2) + ")";
+					// Connection conn = connSql.getConn();
+					// connSql.excuteUpdate(conn, sql);
 
 					File xmlFiles = new File(projectName);
 					DirFilter filter = new DirFilter(".xml");
@@ -349,24 +351,29 @@ public class WebFetcher implements LadyrBrowser {
 							return;
 						NodeList rootNode = doc.getElementsByTagName("ContentNode");
 
-//						for (int index = 0; index < rootNode.getLength(); ++index) {
-//
-//							insertSql = "insert into " + projectName + " (";
-//							Node fatherNode = rootNode.item(index);
-//							NodeList childNodes = fatherNode.getChildNodes();
-//							System.out.println(fatherNode.getNodeName());
-//							HashMap<String, String> valueList = generateDBValues(childNodes);
-//							for (String key : valueList.keySet()) {
-//								insertSql += key + " ,";
-//							}
-//							insertSql = insertSql.substring(0, insertSql.length() - 2) + " ) values (";
-//
-//							for (String key : valueList.keySet()) {
-//								insertSql += "'" + valueList.get(key).replace("'", "''") + "',";
-//							}
-//							insertSql = insertSql.substring(0, insertSql.length() - 1) + " )";
-//							connSql.excuteUpdate(conn, insertSql);
-//						}
+						// for (int index = 0; index < rootNode.getLength();
+						// ++index) {
+						//
+						// insertSql = "insert into " + projectName + " (";
+						// Node fatherNode = rootNode.item(index);
+						// NodeList childNodes = fatherNode.getChildNodes();
+						// System.out.println(fatherNode.getNodeName());
+						// HashMap<String, String> valueList =
+						// generateDBValues(childNodes);
+						// for (String key : valueList.keySet()) {
+						// insertSql += key + " ,";
+						// }
+						// insertSql = insertSql.substring(0, insertSql.length()
+						// - 2) + " ) values (";
+						//
+						// for (String key : valueList.keySet()) {
+						// insertSql += "'" + valueList.get(key).replace("'",
+						// "''") + "',";
+						// }
+						// insertSql = insertSql.substring(0, insertSql.length()
+						// - 1) + " )";
+						// connSql.excuteUpdate(conn, insertSql);
+						// }
 
 					}
 					// Element rootElement = doc.createElement("Project");
@@ -455,7 +462,7 @@ public class WebFetcher implements LadyrBrowser {
 
 		return dividedLists;
 	}
-	
+
 	private ArrayList<ArrayList<String>> divideKeywordList() {
 		ArrayList<ArrayList<String>> dividedLists = new ArrayList<ArrayList<String>>();
 
@@ -685,7 +692,7 @@ public class WebFetcher implements LadyrBrowser {
 						}
 
 					}
-					setStatusLabel("共选中"+waitPageList.size()+"个页面");
+					setStatusLabel("共选中" + waitPageList.size() + "个页面");
 				}
 			}
 
@@ -724,15 +731,27 @@ public class WebFetcher implements LadyrBrowser {
 							return;
 						try {
 							nsIDOMElement element = getMouseClickXpath(e);
-							String tmString = getClickElementXpath("//", (nsIDOMNode) element);
-							tmString = tmString.substring(0, tmString.length() - 1);
-							int index = elementIndex((nsIDOMNode) element, tmString);
-							if (index != -1) {
-								tmString += "%%" + index;
+							if(element==null)
+								return;
+							StringBuilder stringBuilder = new StringBuilder("//");
+							while (element.getLocalName().equals("iframe")) {
+								element = getElementInIframe(e, stringBuilder, element);
 							}
-							hightLight(tmString);
+
+							String tmString = getClickElementXpath(stringBuilder.toString(), (nsIDOMNode) element);
+							tmString = tmString.substring(0, tmString.length() - 1);
+							System.out.println(tmString);
+//							 int index = elementIndex((nsIDOMNode) element,
+//							 tmString);
+							// if (index != -1) {
+							// tmString += "%%" + index;
+							// }
+//							hightLight(tmString);
 						} catch (NullPointerException e1) {
-							e1.printStackTrace();
+//							e1.printStackTrace();
+						}catch(StringIndexOutOfBoundsException e2)
+						{
+//							e2.printStackTrace();
 						}
 					}
 					break;
@@ -755,7 +774,7 @@ public class WebFetcher implements LadyrBrowser {
 						hightLight(tmString);
 						nodeVauleMap.put(tmString, " ");
 						operateMap.put(tmString, " ");
-						repeatMap.put(tmString,false);
+						repeatMap.put(tmString, false);
 						updateRegularTable(tmString);
 					}
 					break;
@@ -939,7 +958,7 @@ public class WebFetcher implements LadyrBrowser {
 										nodeVauleMap.put(xpath, "Description");
 									} else if (combo.getSelectionIndex() == 2) {
 										nodeVauleMap.put(xpath, "Option");
-									} 
+									}
 								} catch (LadyrBrowserException e1) {
 									e1.printStackTrace();
 								}
@@ -965,7 +984,7 @@ public class WebFetcher implements LadyrBrowser {
 					combo.add("Download");
 					combo.add("GetLink");
 					try {
-						
+
 						final String xpath = item.getText(1);
 						combo.addModifyListener(new ModifyListener() {
 
@@ -998,7 +1017,7 @@ public class WebFetcher implements LadyrBrowser {
 										operateMap.put(xpath, "Download");
 									} else if (combo.getSelectionIndex() == 5) {
 										operateMap.put(xpath, "GetLink");
-									} 
+									}
 								} catch (LadyrBrowserException e1) {
 									e1.printStackTrace();
 								}
@@ -1014,34 +1033,33 @@ public class WebFetcher implements LadyrBrowser {
 					} catch (Exception e1) {
 						e1.printStackTrace();
 					}
-				}else if (editableColumn == 4) {
+				} else if (editableColumn == 4) {
 					final CCombo combo = new CCombo(tbRegular, SWT.NONE);
 					combo.setText("请选择此元素是否重复操作");
 					combo.add("true");
 					combo.add("false");
 
 					try {
-						
+
 						final String xpath = item.getText(1);
 						combo.addModifyListener(new ModifyListener() {
 
 							@Override
 							public void modifyText(ModifyEvent e) {
 								try {
-								if (!combo.getText().equals("")) {
-									if(combo.getText().contains("t")||combo.getText().contains("T"))
-									{repeatMap.put(xpath, true);
-									item.setText(4, "true");
+									if (!combo.getText().equals("")) {
+										if (combo.getText().contains("t") || combo.getText().contains("T")) {
+											repeatMap.put(xpath, true);
+											item.setText(4, "true");
+										} else {
+											repeatMap.put(xpath, false);
+											item.setText(4, "false");
+
+										}
 									}
-									else
-									{repeatMap.put(xpath, false);
-									item.setText(4, "false");
-										
-									}
+								} catch (LadyrBrowserException e1) {
+									e1.printStackTrace();
 								}
-							} catch (LadyrBrowserException e1) {
-								e1.printStackTrace();
-							}
 							}
 						});
 
@@ -1050,10 +1068,10 @@ public class WebFetcher implements LadyrBrowser {
 							public void widgetSelected(SelectionEvent e) {
 								try {
 									if (combo.getSelectionIndex() == 0) {
-										repeatMap.put(xpath,true);
+										repeatMap.put(xpath, true);
 									} else if (combo.getSelectionIndex() == 1) {
-										repeatMap.put(xpath,false);
-									} 
+										repeatMap.put(xpath, false);
+									}
 								} catch (LadyrBrowserException e1) {
 									e1.printStackTrace();
 								}
@@ -1090,7 +1108,7 @@ public class WebFetcher implements LadyrBrowser {
 		TableColumn tbclMap = new TableColumn(tbRegular, SWT.NONE);
 		tbclMap.setWidth(129);
 		tbclMap.setText("\u5143\u7D20\u6620\u5C04");
-		
+
 		TableColumn tblclReverse = new TableColumn(tbRegular, SWT.NONE);
 		tblclReverse.setWidth(100);
 		tblclReverse.setText("\u662F\u5426\u91CD\u590D");
@@ -1125,33 +1143,33 @@ public class WebFetcher implements LadyrBrowser {
 		btSaveRegular = new Button(composite_2, SWT.NONE);
 		btSaveRegular.setText("\u4FDD\u5B58\u89C4\u5219\u6587\u4EF6");
 		btSaveRegular.setEnabled(false);
-		
+
 		TabItem tabItem_2 = new TabItem(WrapStatusTabFolder, 0);
 		tabItem_2.setText("\u83B7\u53D6\u72B6\u6001");
-		
+
 		Composite composite_4 = new Composite(WrapStatusTabFolder, SWT.NONE);
 		tabItem_2.setControl(composite_4);
 		composite_4.setLayout(new BorderLayout(0, 0));
-		
+
 		tbStatus = new Table(composite_4, SWT.BORDER | SWT.FULL_SELECTION);
 		tbStatus.setLinesVisible(true);
 		tbStatus.setHeaderVisible(true);
 		tbStatus.setLayoutData(BorderLayout.CENTER);
-		
+
 		TableColumn tableColumn_1 = new TableColumn(tbStatus, SWT.NONE);
 		tableColumn_1.setWidth(52);
 		tableColumn_1.setText("\u7A97\u53E3");
-		
+
 		TableColumn tableColumn_2 = new TableColumn(tbStatus, SWT.NONE);
 		tableColumn_2.setWidth(243);
 		tableColumn_2.setToolTipText("\u5143\u7D20\u5B9A\u4F4D");
 		tableColumn_2.setText("\u5F53\u524D\u9875\u9762\u5730\u5740");
-		
+
 		TableColumn tableColumn_3 = new TableColumn(tbStatus, SWT.NONE);
 		tableColumn_3.setWidth(167);
 		tableColumn_3.setToolTipText("\u9700\u8981\u5F80\u6B64\u5143\u7D20\u586B\u5199\u7684\u5185\u5BB9");
 		tableColumn_3.setText("\u72B6\u6001");
-		
+
 		TableColumn tableColumn_6 = new TableColumn(tbStatus, SWT.NONE);
 		tableColumn_6.setWidth(129);
 		tableColumn_6.setText("\u5269\u4F59\u9875\u9762\u6570");
@@ -1468,7 +1486,7 @@ public class WebFetcher implements LadyrBrowser {
 	private boolean getProxyModelFromList(boolean isLastABadIp) {
 		if (isLastABadIp) {
 			for (TableItem item : tbProxyInfo.getItems()) {
-//				System.out.println(item.getText(0));
+				// System.out.println(item.getText(0));
 				if (item.getText(0).equals(currProxyModel.getPorxyIp() + ":" + currProxyModel.getProxyPort())) {
 					item.setBackground(display.getSystemColor(SWT.COLOR_RED));
 					item.setText(1, "BadID");
@@ -1511,11 +1529,49 @@ public class WebFetcher implements LadyrBrowser {
 		if (loading)
 			return;
 		try {
-			if (tmString.contains("%%")) {
-				String[] tmp = tmString.split("%%");
+			List<String> xpaths = null;
+			Node contextNode = null;
+			String xpathSearch = "";
+			if (tmString.contains("##")) {
+				xpaths = new ArrayList<String>();
+				xpaths = Arrays.asList(tmString.split("##"));
+				int retryFindNodeTime = 0;
+				List<Node> nodes = new ArrayList<Node>();
+
+				if (xpaths != null) {
+					for (int i = 0; i < xpaths.size() - 1; ++i) {
+						if (i == 0) {
+							contextNode = new BrowserImpl(browser).getDocument();
+						}
+						int retryFindNodeTime1 = 0;
+						do {
+							try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+								e.printStackTrace();
+							}
+							checkIfDocumentLoaded();
+							contextNode = xpathNode(xpaths.get(i), contextNode);
+							retryFindNodeTime1++;
+						} while (contextNode == null && retryFindNodeTime1 < 8);
+
+						if (contextNode instanceof HTMLIFrameElement) {
+							HTMLIFrameElement element = (HTMLIFrameElement) contextNode;
+							contextNode = element.getContentDocument();
+						}
+					}
+					xpathSearch = xpaths.get(xpaths.size() - 1);
+				}
+			} else {
+				contextNode = new BrowserImpl(browser).getDocument();
+				xpathSearch = tmString;
+			}
+
+			if (xpathSearch.contains("%%")) {
+				String[] tmp = xpathSearch.split("%%");
 				String xpath = tmp[0];
 				int index = Integer.parseInt(tmp[1]);
-				List<Node> xpathNodes = xpathNodes(xpath);
+				List<Node> xpathNodes = xpathNodes(xpath,contextNode);
 				removeHighLight();
 				if (bps.getFetchType() == 1) {
 					if (index == -1) {
@@ -1533,7 +1589,7 @@ public class WebFetcher implements LadyrBrowser {
 					}
 				}
 			} else {
-				List<Node> xpathNodes = xpathNodes(tmString);
+				List<Node> xpathNodes = xpathNodes(xpathSearch,contextNode);
 				removeHighLight();
 				for (Node node : xpathNodes) {
 					nsIDOMNode element = NodeFactory.getnsIDOMNode(node);
@@ -1551,11 +1607,11 @@ public class WebFetcher implements LadyrBrowser {
 		if (element.hasAttribute("style")) {
 			highLightedElementStyle = element.getAttribute("style");
 			elementStyleMap.put(element, highLightedElementStyle);
-//			System.out.println(highLightedElementStyle);
+			// System.out.println(highLightedElementStyle);
 			StringBuilder sb = new StringBuilder();
 			sb.append(highLightedElementStyle);
 			sb.append(" outline:#f00 solid 2px;");
-//			System.out.println(sb.toString());
+			// System.out.println(sb.toString());
 			element.setAttribute("style", sb.toString());
 		} else {
 			elementStyleMap.put(element, "");
@@ -1575,11 +1631,13 @@ public class WebFetcher implements LadyrBrowser {
 	}
 
 	public String getClickElementXpath(String xpath, nsIDOMNode childNode) {
+
 		if (childNode != null) {
-//			System.out.println(childNode.getParentNode().getLocalName());
+			// System.out.println(childNode.getParentNode().getLocalName());
 			if (childNode.getParentNode().getLocalName() != null) {
 				nsIDOMNode node = childNode.getParentNode();
 				xpath = getClickElementXpath(xpath, node);
+
 				xpath += childNode.getLocalName() + getNodeAttrXpath(childNode) + "/";
 			} else {
 				return xpath;
@@ -1602,22 +1660,22 @@ public class WebFetcher implements LadyrBrowser {
 		return -1;
 	}
 
-
-
 	private nsIDOMElement getElementInIframe(Event e, StringBuilder xpath, nsIDOMElement element) {
-		nsIDOMNode node = element.getParentNode();
-		if (node.getLocalName() != null) {
-			xpath.append(node.getLocalName());
-			xpath.append(getNodeAttrXpath(node));
-			if ((!element.getLocalName().equals("span") && !element.getLocalName().equals("SPAN"))
-					|| (!node.getLocalName().equals("a") && !node.getLocalName().equals("A"))) {
-
-				xpath.append("/");
-				xpath.append(element.getLocalName());
-				xpath.append(getNodeAttrXpath(element));
-				xpath.append("##//");
-			}
-		}
+		xpath.append(getClickElementXpath(xpath.toString(),element).substring(2));
+		xpath.append("##");
+//		nsIDOMNode node = element.getParentNode();
+//		if (node.getLocalName() != null) {
+//			xpath.append(node.getLocalName());
+//			xpath.append(getNodeAttrXpath(node));	
+//			if ((!element.getLocalName().equals("span") && !element.getLocalName().equals("SPAN"))
+//					|| (!node.getLocalName().equals("a") && !node.getLocalName().equals("A"))) {
+//
+//				xpath.append("/");
+//				xpath.append(element.getLocalName());
+//				xpath.append(getNodeAttrXpath(element));
+//				xpath.append("##//");
+//			}
+//		}
 
 		nsIDOMHTMLIFrameElement iframeElement = XPCOMUtils.qi(element, nsIDOMHTMLIFrameElement.class);
 		nsIDOMDocument contentDoc = iframeElement.getContentDocument();
@@ -1688,8 +1746,7 @@ public class WebFetcher implements LadyrBrowser {
 					if (count == 0) {
 						parentAttString = "[";
 					}
-					parentAttString += "@" + node.getAttributes().item(i).getNodeName() + "='" + node.getAttributes().item(i).getNodeValue()
-							+ "' and ";
+					parentAttString += "@" + node.getAttributes().item(i).getNodeName() + "='" + node.getAttributes().item(i).getNodeValue() + "' and ";
 					count++;
 				}
 			}
@@ -2173,8 +2230,8 @@ public class WebFetcher implements LadyrBrowser {
 				numReloads++;
 
 				if (numReloads == MAX_NUM_RELOADS) {
-					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPaths: " + Arrays.toString(xpaths)
-							+ " in URL " + getCurrentURL());
+					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPaths: " + Arrays.toString(xpaths) + " in URL "
+							+ getCurrentURL());
 				}
 			}
 		}
@@ -2202,8 +2259,7 @@ public class WebFetcher implements LadyrBrowser {
 				numReloads++;
 
 				if (numReloads == MAX_NUM_RELOADS) {
-					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with regex: " + regex + " in URL "
-							+ getCurrentURL());
+					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with regex: " + regex + " in URL " + getCurrentURL());
 				}
 			}
 		}
@@ -2264,8 +2320,7 @@ public class WebFetcher implements LadyrBrowser {
 				numReloads++;
 
 				if (numReloads == MAX_NUM_RELOADS) {
-					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPath: " + xpath + " in URL "
-							+ getCurrentURL());
+					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPath: " + xpath + " in URL " + getCurrentURL());
 				}
 			}
 			results = extractText(xpath);
@@ -2307,8 +2362,7 @@ public class WebFetcher implements LadyrBrowser {
 				numReloads++;
 
 				if (numReloads == MAX_NUM_RELOADS) {
-					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPath: " + xpath + " in URL "
-							+ getCurrentURL());
+					throw new LadyrBrowserException("MAX_NUM_RELOADS=" + MAX_NUM_RELOADS + " reached with XPath: " + xpath + " in URL " + getCurrentURL());
 				}
 			}
 			results = extractText(xpath);
@@ -2773,7 +2827,7 @@ public class WebFetcher implements LadyrBrowser {
 				NodeList nodeList = component.getChildNodes();
 				ArrayList<String> optionList = new ArrayList<String>();
 				for (int i = 0; i < nodeList.getLength(); i++) {
-//					System.out.println(nodeList.item(i).getNodeName());
+					// System.out.println(nodeList.item(i).getNodeName());
 					if (nodeList.item(i).getNodeName().equals("option")) {
 						optionList.add(nodeList.item(i).getTextContent().toLowerCase());
 					}
@@ -3506,6 +3560,36 @@ public class WebFetcher implements LadyrBrowser {
 	}
 
 	/**
+	 * 从iframe中取出元素
+	 * 
+	 * @param e
+	 * @param xpath
+	 * @param element
+	 * @return
+	 */
+	private nsIDOMElement getElementInIframe(MouseEvent e, StringBuilder xpath, nsIDOMElement element) {
+		nsIDOMNode node = element.getParentNode();
+		if (node.getLocalName() != null) {
+			xpath.append(node.getLocalName());
+			xpath.append(getNodeAttrXpath(node));
+			if ((!element.getLocalName().equals("span") && !element.getLocalName().equals("SPAN"))
+					|| (!node.getLocalName().equals("a") && !node.getLocalName().equals("A"))) {
+
+				xpath.append("/");
+				xpath.append(element.getLocalName());
+				xpath.append(getNodeAttrXpath(element));
+				xpath.append("##//");
+			}
+		}
+
+		nsIDOMHTMLIFrameElement iframeElement = XPCOMUtils.qi(element, nsIDOMHTMLIFrameElement.class);
+		nsIDOMDocument contentDoc = iframeElement.getContentDocument();
+		nsIDOMNSDocument nsContentdoc = XPCOMUtils.qi(contentDoc, nsIDOMNSDocument.class);
+		element = nsContentdoc.elementFromPoint(e.x, e.y);
+		return element;
+	}
+
+	/**
 	 * 清理浏览器信息，清cache、cookies,换useragent
 	 */
 	private void clearBrowserInfo() {
@@ -3529,10 +3613,8 @@ public class WebFetcher implements LadyrBrowser {
 
 	private void addObersever() {
 		String contractID = "@mozilla.org/observer-service;1";
-
 		nsIServiceManager serviceManager = Mozilla.getInstance().getServiceManager();
-		nsIObserverService observerService = (nsIObserverService) serviceManager.getServiceByContractID(contractID,
-				nsIObserverService.NS_IOBSERVERSERVICE_IID);
+		nsIObserverService observerService = (nsIObserverService) serviceManager.getServiceByContractID(contractID, nsIObserverService.NS_IOBSERVERSERVICE_IID);
 		SimpleHTTPObserver httpObserver = new SimpleHTTPObserver();
 		observerService.addObserver(httpObserver, "http-on-modify-request", false);// 获取http-on-modify-request主题（类似与事件监听）
 	}
@@ -3641,7 +3723,7 @@ public class WebFetcher implements LadyrBrowser {
 					TreeItem item = new TreeItem(root, 0);
 					item.setText(url);
 				}
-				
+
 				/*
 				 * 从数据库中获取关键字列表
 				 */
@@ -3649,15 +3731,13 @@ public class WebFetcher implements LadyrBrowser {
 				String sqlStr = "SELECT keyword FROM keywords where status <> 1 or status is null";
 				ResultSet rs = dbQuery.getQueryResult(sqlStr);
 				try {
-					while(rs.next())
-					{
+					while (rs.next()) {
 						keywordList.add(rs.getString(1));
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-				
-			
+
 			}
 		}
 

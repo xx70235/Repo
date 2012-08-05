@@ -734,7 +734,7 @@ public class WebFetcher implements LadyrBrowser {
 							if(element==null)
 								return;
 							StringBuilder stringBuilder = new StringBuilder("//");
-							while (element.getLocalName().equals("iframe")) {
+							if(element.getLocalName().equals("iframe")) {//TODO: change into while
 								element = getElementInIframe(e, stringBuilder, element);
 							}
 
@@ -1629,7 +1629,12 @@ public class WebFetcher implements LadyrBrowser {
 			}
 		}
 	}
-
+/**
+ *为啥要向上嵌套一次？（这是个递归函数）
+ * @param xpath
+ * @param childNode
+ * @return
+ */
 	public String getClickElementXpath(String xpath, nsIDOMNode childNode) {
 
 		if (childNode != null) {
@@ -1662,7 +1667,7 @@ public class WebFetcher implements LadyrBrowser {
 
 	private nsIDOMElement getElementInIframe(Event e, StringBuilder xpath, nsIDOMElement element) {
 		xpath.append(getClickElementXpath(xpath.toString(),element).substring(2));
-		xpath.append("##");
+		xpath.append("##//");
 //		nsIDOMNode node = element.getParentNode();
 //		if (node.getLocalName() != null) {
 //			xpath.append(node.getLocalName());
